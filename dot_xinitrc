@@ -37,5 +37,6 @@ setxkbmap -layout gb
 exec pipewire &
 exec pipewire-pulse &
 
+export QT_QPA_PLATFORMTHEME=qt5ct
 export DESKTOP_SESSION="bspwm"
 exec bspwm
