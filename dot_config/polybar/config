@@ -1,4 +1,4 @@
-# remmybar
+# beefybar
 # a polybar config
 
 [colors]
@@ -16,10 +16,11 @@ red = #ff5555
 yellow = #f1fa8c
 
 [bar/top]
-monitor = HDMI-0
+monitor = DVI-I-1
 width = 100%
 height = 30
 wm-restack = bspwm
+# wm-restack = openbox
 
 # tray
 tray-position = right
