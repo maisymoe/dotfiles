@@ -1,0 +1,27 @@
+#! /bin/sh
+# beefspwm
+
+# start programs :sunglasses:
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+~/.fehbg
+polybar -r top &
+picom &
+dunst &
+
+# qt style
+export QT_STYLE_OVERRIDE=qt5ct
+
+# borders
+bspc config border_width         0
+bspc config window_gap          8
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+# workspace
+bspc monitor -d 1 2 3 4 5 6 7 8 9 0
+
+# rules
+bspc rule -a Gimp desktop='^8' state=floating follow=on
